@@ -1,6 +1,6 @@
 def partition(array, begin, end):
     pivot = begin
-    for i in xrange(begin+1, end+1):
+    for i in range(begin+1, end+1):
         if array[i] <= array[begin]:
             pivot += 1
             array[i], array[pivot] = array[pivot], array[i]
